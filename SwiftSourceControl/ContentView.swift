@@ -16,6 +16,7 @@ struct ContentView: View {
             
             Text("I am active!")
                 .font(.title)
+                .foregroundStyle(.red)
         }
         .padding()
         .padding(.bottom)
