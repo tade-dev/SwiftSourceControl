@@ -9,17 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.red)
-            
-            Text("I am active!")
-                .font(.title)
-                .foregroundStyle(.red)
+        NavigationView {
+            VStack {
+
+                NavigationLink {
+                    SecondScreen()
+                } label: {
+                    Image(systemName: "globe")
+                        .imageScale(.large)
+                        .foregroundStyle(.red)
+                }
+
+                
+                Text("I am active!")
+                    .font(.title)
+                    .foregroundStyle(.red)
+            }
+            .padding()
+            .padding(.bottom)
         }
-        .padding()
-        .padding(.bottom)
     }
 }
 
